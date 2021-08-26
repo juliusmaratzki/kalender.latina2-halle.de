@@ -6,7 +6,7 @@ Hinweis zu den hier aufgeführten Dateien und Verzeichnissen: Bestimmte Dateien 
 
 Bei Fragen wenden Sie sich bitte an die folgende Mailadresse und schauen Sie sich das Impressum online an.
 
-Ansprechpartner: kontakt@kalender.latina2-halle.de - 
+Ansprechpartner: kontakt@kalender.latina2-halle.de
 
 ---
 
@@ -18,4 +18,4 @@ Note about the files and directories listed here: Certain files and directories 
 
 If you have any questions, please contact the following mail address and have a look at the imprint online.
 
-Contact: kontakt@kalender.latina2-halle.de - 
+Contact: kontakt@kalender.latina2-halle.de
