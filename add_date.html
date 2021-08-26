@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="juliusmaratzki">
+        <link rel="stylesheet" type="text/css" media="screen" href="./res/style/style-source.css">
+        <link rel="shortcut icon" type="image/x-icon" href="shortcut.png">
+        <title>Jahreskalender | Terminergänzung</title> 
+    </head>
+    <body>
+        <div class="frame">
+        <body text="#000000" bgcolor="#214A49" link="#FF0000" alink="#FF0000" vlink="#FF0000"></body>
+        <div class="OS-Semibold">Terminergänzung</div>
+          <br>
+        <div class="OS-Light">
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="http://www.kalender.latina2-halle.de/login/members.html">Login</a>
+          <div class="dropdown">
+            <button class="dropbtn">Kalender K1
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="in_browser_k1.html">In-Browser-Ansicht</a>
+              <a href="download_csv.html">Download als CSV</a>
+              <a href="download_ics.html">Download als ICS</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Kalender K2
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="in_browser_k2.html">In-Browser-Ansicht</a>
+              <a href="download_csv.html">Download als CSV</a>
+              <a href="download_ics.html">Download als ICS</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Kalender K3
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="in_browser_k3.html">In-Browser-Ansicht</a>
+              <a href="download_csv.html">Download als CSV</a>
+              <a href="download_ics.html">Download als ICS</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Kontakt
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="kontakt.html">Kontaktformular</a>
+              <a href="add_date.html">Termine ergänzen</a>
+            </div></div>
+            <div class="dropdown">
+              <button class="dropbtn">Impressum
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+              </div>
+        </div>
+      </div>
+        <br>
+        <div class="textbox"><div class="OS-Light-Textbox">
+            <div class="OS-Semibold15pt">Ergänzen Sie fehlende Termine!</div><br>Sie vermissen einen Termin im Jahreskalender? Ergänzen Sie 
+            fehlende Termine ganz einfach und unkomplizieret. Füllen Sie einfach das Formular aus und helfen Sie mit bei der
+            Verbesserung des Jahreskalenders.</div></div>
+                <br>
+            <form class="contact-form" action="add_date.php" method="post">
+                    <select name="anrede"
+                        style="width: 100%; height: 50px; font-family: OS-Light; font-size: 15pt; padding-left: 20px;">
+                        <option>Herr</option>
+                        <option>Frau</option>
+                    </select><br><br>
+                    <input type="text" name="vorname" placeholder="Vorname"
+                        style="width: 100%; height: 50px; font-family: OS-Light; font-size: 15pt; padding-left: 20px;" required><br><br>
+                    <input type="text" name="nachname" placeholder="Nachname"
+                        style="width: 100%; height: 50px; font-family: OS-Light; font-size: 15pt; padding-left: 20px;" required><br><br>
+                    <input type="text" name="mail" placeholder="Mailadresse"
+                        style="width: 100%; height: 50px; font-family: OS-Light; font-size: 15pt; padding-left: 20px;" required><br><br>
+                    <input type="text" name="termin" placeholder="Termin, Ereignis oder Event"
+                        style="width: 100%; height: 50px; font-family: OS-Light; font-size: 15pt; padding-left: 20px;" required><br><br>
+                    <input type="text" name="date" placeholder="Datum - Format: TT.MM.YYYY"
+                        style="width: 100%; height: 50px; font-family: OS-Light; font-size: 15pt; padding-left: 20px;" required><br><br>
+                    <input type="text" name="class" placeholder="Klasse bzw. Kurs"
+                        style="width: 100%; height: 50px; font-family: OS-Light; font-size: 15pt; padding-left: 20px;" required><br><br>
+                    <div class="OS-Light-White15pt"><input type="checkbox" name="agree" 
+                      required> 
+                      Ich habe die <a href="https://www.kalender.latina2-halle.de/datenschutz.html" style="color: #FFFFFF;">Datenschutzhinweise</a> gelesen und stimme der entsprechenden Erhebung und Verarbeitung meiner Daten zu.</div>
+                    <br>
+                <button class="button button1" type="submit" name="submit">E-MAIL SENDEN</button>
+                <button class="button button1" type="reset" name="reset">ZURÜCKSETZEN</button>
+    </body>
+</html>

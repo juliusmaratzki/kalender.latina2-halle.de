@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="juliusmaratzki">
+        <link rel="stylesheet" type="text/css" media="screen" href="./res/style/style-source.css">
+        <link rel="shortcut icon" type="image/x-icon" href="shortcut.png">
+        <title>Jahreskalender | Kontakt</title> 
+    </head>
+    <body>
+        <div class="frame">
+        <body text="#000000" bgcolor="#214A49" link="#FF0000" alink="#FF0000" vlink="#FF0000"></body>
+        <div class="OS-Semibold">Kontaktformular</div>
+          <br>
+        <div class="OS-Light">
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="http://www.kalender.latina2-halle.de/login/members.html">Login</a>
+          <div class="dropdown">
+            <button class="dropbtn">Kalender K1
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="in_browser_k1.html">In-Browser-Ansicht</a>
+              <a href="download_csv.html">Download als CSV</a>
+              <a href="download_ics.html">Download als ICS</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Kalender K2
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="in_browser_k2.html">In-Browser-Ansicht</a>
+              <a href="download_csv.html">Download als CSV</a>
+              <a href="download_ics.html">Download als ICS</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Kalender K3
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="in_browser_k3.html">In-Browser-Ansicht</a>
+              <a href="download_csv.html">Download als CSV</a>
+              <a href="download_ics.html">Download als ICS</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Kontakt
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="kontakt.html">Kontaktformular</a>
+              <a href="add_date.html">Termine ergänzen</a>
+            </div></div>
+            <div class="dropdown">
+              <button class="dropbtn">Impressum
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+              </div>
+        </div>
+      </div>
+        <br>
+        <div class="textbox"><div class="OS-Light-Textbox">
+            <div class="OS-Semibold15pt">
+                    <script type="text/javascript">
+                        var jetzt = new Date();
+                        var Std = jetzt.getHours();
+                        if (Std >= 5 && Std < 10) {
+                         document.write("Guten Morgen, ");
+                        } else if (Std >= 10 && Std < 18) {
+                          document.write("Guten Tag, ");
+                        } else if (Std >= 18 && Std <= 23) {
+                          document.write("Guten Abend, ");
+                        } else if (Std >= 23 && Std < 5) {
+                          document.write("Gute Nacht, ");
+                        }
+                    </script>
+            nehmen Sie mit uns Kontakt auf!</div><br>Sie haben Fragen zu unserem Jahreskalender, Ideen und Anregungen oder Grund zur Kritik? Dann schreiben Sie uns eine E-Mail und
+            wir kümmern uns schnellstmöglich um Ihr Anliegen.<br>Füllen Sie einfach das folgende Formular aus, um mit uns in Kontakt zu treten.</div></div>
+                <br>
+            <form class="contact-form" action="contactform.php" method="post">
+                    <select name="anrede"
+                        style="width: 100%; height: 50px; font-family: OS-Light; font-size: 15pt; padding-left: 20px;">
+                        <option>Herr</option>
+                        <option>Frau</option>
+                    </select><br><br>
+                    <input type="text" name="vorname" placeholder="Vorname"
+                        style="width: 100%; height: 50px; font-family: OS-Light; font-size: 15pt; padding-left: 20px;" required><br><br>
+                    <input type="text" name="nachname" placeholder="Nachname"
+                        style="width: 100%; height: 50px; font-family: OS-Light; font-size: 15pt; padding-left: 20px;" required><br><br>
+                    <input type="text" name="mail" placeholder="Mailadresse"
+                        style="width: 100%; height: 50px; font-family: OS-Light; font-size: 15pt; padding-left: 20px;" required><br><br>
+                    <input type="text" name="subjectif" placeholder="Betreff - falls unten nicht angegeben"
+                        style="width: 100%; height: 50px; font-family: OS-Light; font-size: 15pt; padding-left: 20px;"><br><br>
+                    <select name="subject"
+                        style="width: 100%; height: 50px; font-family: OS-Light; font-size: 15pt; padding-left: 20px;" required>
+                        <option>Frage zum Jahreskalender</option>
+                        <option>Ideen und Anregungen</option>
+                        <option>Ergänzung von Terminen</option>
+                        <option>Beschwerden und Kritik</option>
+                    </select>
+                    <br><br>
+                <textarea name="message" placeholder="Nachricht"
+                        style="width: 100%; height: 150px; font-family: OS-Light; font-size: 15pt; padding-left: 20px; padding-top: 10px;"></textarea>
+                    <br><br>
+                    <div class="OS-Light-White15pt"><input type="checkbox" name="agree" 
+                      required> 
+                      Ich habe die <a href="https://www.kalender.latina2-halle.de/datenschutz.html" style="color: #FFFFFF;">Datenschutzhinweise</a> gelesen und stimme der entsprechenden Erhebung und Verarbeitung meiner Daten zu.</div>
+                    <br>
+                <button class="button button1" type="submit" name="submit">E-MAIL SENDEN</button>
+                <button class="button button1" type="reset" name="reset">ZURÜCKSETZEN</button>
+    </body>
+</html>
